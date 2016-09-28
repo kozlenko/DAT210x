@@ -4,12 +4,16 @@ import pandas as pd
 #
 # .. your code here ..
 
+df = pd.read_csv("tutorial.csv")
+
+
 
 
 # TODO: Print the results of the .describe() method
 #
 # .. your code here ..
 
+print(df.describe())
 
 
 # TODO: Figure out which indexing method you need to
@@ -18,3 +22,4 @@ import pandas as pd
 #
 # .. your code here ..
 
+print(df.loc[2:4,['col3']])
